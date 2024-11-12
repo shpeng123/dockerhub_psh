@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/apachepulsar/pulsar:2.9.5 docker://registry.cn-hangzhou.aliyuncs.com/apachepulsar_psh/pulsar:2.9.5
+         skopeo copy docker://docker.io/milvusdb/milvus:v2.4.13-hotfix docker://registry.cn-hangzhou.aliyuncs.com/milvusdb_psh/milvus:v2.4.13-hotfix
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
