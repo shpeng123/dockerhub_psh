@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/longhornio/csi-resizer:v1.9.0 docker://registry.cn-hangzhou.aliyuncs.com/milvusdb_psh/csi-resizer:v1.9.0
+         skopeo copy docker://docker.io/milvusdb/heaptrack:v0.1.0 docker://registry.cn-hangzhou.aliyuncs.com/milvusdb_psh/heaptrack:v0.1.0
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
